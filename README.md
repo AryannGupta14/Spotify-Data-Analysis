@@ -1,4 +1,4 @@
-# Spotify-Data-Analysis
+# Spotify Data Analysis
 End to End Data Analysis and Machine Learning Project
 
 ## Project Overview 
