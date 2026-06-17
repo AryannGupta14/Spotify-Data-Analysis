@@ -1,4 +1,4 @@
-# Spotify Data Analysis
+# 🎵 Spotify — Song Popularity Prediction
 End to End Data Analysis and Machine Learning Project
 
 ## Project Overview 
@@ -10,12 +10,13 @@ Music streaming platforms rely heavily on understanding user preferences to:
 2. Support artist promotion strategies.
 3. Enhance user engagement and retention.
 
+## 📌 Problem Statement
 The goal of this project was to:
 1. Predict Spotify song popularity scores (0–100).
 2. Identify key audio and metadata features driving popularity.
 3. Translate analytical findings into actionable insights for content and product teams.
 
-## Dataset Description
+## 📊 Dataset
 a. Source: Kaggle (Spotify Dataset)
 b. Size: 114,000+ tracks
 c. Features: 21 audio and metadata attributes, including:
@@ -40,7 +41,7 @@ c. Features: 21 audio and metadata attributes, including:
 19. time_signature: An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of 3/4, to 7/4.
 20. track_genre: The genre in which the track belongs
 
-## Methodology (End-to-End Workflow)
+## 🔍 What I did (End-to-End Workflow)
 ### Data Cleaning & Preprocessing
 1.Handled missing values and duplicate records
 2. Performed categorical encoding where required
@@ -70,7 +71,7 @@ c. Features: 21 audio and metadata attributes, including:
 2. XGBoost achieved an R² value of 0.70, indicating strong explanatory power for popularity prediction
 3. Compared model performance to select the most reliable approach
 
-## Key Insights (Business Value)
+## 📈 Key Results (Business Value)
 1. Danceability, energy, and valence emerged as the strongest predictors of popularity
 2. Songs with higher energy and positive emotional tone tended to perform better
 3. Audio features play a measurable role in shaping listener engagement and content success
@@ -80,11 +81,28 @@ c. Features: 21 audio and metadata attributes, including:
 2. Artist marketing strategies
 3. Data-driven content recommendations
 
-## Results & Impact
-1. Built a reliable regression model to predict song popularity
-2. Delivered interpretable insights linking audio features to engagement
-3. Demonstrated strong capabilities in:
-a. Data preprocessing
-b. Statistical reasoning
-c. Model evaluation
-d. Business-oriented insight generation
+## 💡 What I learned
+
+**Ridge vs Lasso** — First time I used regularization properly. Lasso zeros out weak features; Ridge shrinks them. Useful to compare both and see which features survive.
+
+**Why R² alone isn't enough** — High R² on training data but lower on test means overfit. Adjusted R² penalizes unnecessary features — I now always report both.
+
+**Feature importance ≠ causation** — Genre being the top predictor doesn't mean switching genre makes a song popular. It means the model relies heavily on genre as a signal. Understanding this distinction matters when presenting results to a non-technical audience.
+
+**The metadata problem** — Artist name and album name dominate predictions because famous artists already have popular songs. A cleaner version of this project would use only audio features to predict popularity of *new* tracks from unknown artists. That's a future improvement worth making.
+
+---
+
+## 🛠️ Tech Stack
+
+```
+Python · Pandas · NumPy · Matplotlib · Seaborn
+Scikit-learn · XGBoost · Statsmodels
+```
+
+---
+
+## 📬 Connect
+
+**Aryan Gupta** — MSc Statistics  
+[LinkedIn](https://linkedin.com/in/aryan-gupta-stats) · aryan.gupta.stats@gmail.com
