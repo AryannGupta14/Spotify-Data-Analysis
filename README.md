@@ -1,4 +1,4 @@
-# 🎵 Spotify — Song Popularity Prediction
+# 🎵 Spotify - Song Popularity Prediction
 End to End Data Analysis and Machine Learning Project
 
 ## Project Overview 
